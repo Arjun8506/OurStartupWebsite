@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <header>
       <div
-        className="text-center absolute top-0 left-0 z-50 w-full  py-3 px-4 flex items-center justify-between"
+        className="text-center absolute top-0 left-0 z-50 w-full  py-3 sm:px-6 md:px-8 px-4 flex items-center justify-between"
         style={
           location.pathname !== "/"
             ? { backgroundColor: "rgb(0,31,84" }
@@ -30,9 +30,9 @@ const Header = () => {
       >
         {!menuOpen && (
           <>
-            <img src={logo} alt="logo" className="w-[35%] text-white" />
+            <img src={logo} alt="logo" className="w-[35%] sm:w-[20%] md:w-[18%]  text-white" />
             <BsFillMenuButtonWideFill
-              className="text-2xl text-white"
+              className="text-2xl sm:text-3xl  text-white"
               onClick={toggleMenu}
             />
           </>
@@ -41,11 +41,11 @@ const Header = () => {
 
       {menuOpen && (
         <div className="fixed top-0 w-full h-screen bg-white/95 z-40">
-          <div className="px-4 flex items-center justify-between py-8">
-            <img src={logoonphone} alt="logo" className="w-[40%]" />
-            <RxCross2 className="text-2xl" onClick={toggleMenu} />
+          <div className="px-4 sm:px-6 md:px-8  flex items-center justify-between py-8">
+            <img src={logoonphone} alt="logo" className="w-[40%] sm:w-[30%]" />
+            <RxCross2 className="text-2xl sm:text-3xl" onClick={toggleMenu} />
           </div>
-          <ul className="mt-0 text-center px-4 flex flex-col gap-2">
+          <ul className="mt-0 text-center px-4 sm:px-6 md:px-8  flex flex-col gap-2 sm:gap-5 md:mt-10">
             <Link to={"/"}>
               <li
                 className={`font-bold text-xl rounded-lg py-2 bg-black/20 hover:text-blue-600 ${

@@ -6,7 +6,7 @@ const Footer = () => {
   
 
   return (
-    <div className="w-full min-h-[100vh] px-4  text-white bg-[rgb(0,31,84)] flex flex-col justify-between">
+    <div className="w-full min-h-[100vh] px-4  text-white bg-[rgb(0,31,84)] flex flex-col justify-between sm:px-6 md:px-8">
       <h1 className="text-2xl uppercase py-8">Hyperfy Web Development</h1>
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-2">
@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <h1 className="mb-4 text-xs text-center">© All rights reserved || HYPERFY CO.</h1>
+      <h1 className="mt-4 text-xs text-center">© All rights reserved || HYPERFY CO.</h1>
     </div>
   );
 };
