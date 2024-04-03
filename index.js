@@ -25,6 +25,9 @@ app.use(express.json())
 
 const port = process.env.PORT || 5000
 
+app.use(express.static(path.join(__dirname, '/frontend/dist')))
+
+
 app.get("/", (req, res) => {
     res.send("Hello From Backend!!!!!")
 })
@@ -81,14 +84,12 @@ app.get("/api/allmessages", async (req, res) => {
 })
 
 
+app.use("*", (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'))
+})
+
 app.listen(port, () => {
     connectToDB()
     console.log(`Server is running on port ${port}`);
 })
 
-
-app.use(express.static(path.join(__dirname, '/frontend/dist')))
-
-app.use("*", (req, res) => {
-    res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'))
-})
