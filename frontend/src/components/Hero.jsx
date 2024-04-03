@@ -1,6 +1,5 @@
 import React from "react";
 import HeroCover from "./HeroCover";
-import Header from "./Header";
 
 const Hero = () => {
   return (
