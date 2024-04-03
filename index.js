@@ -27,9 +27,8 @@ const port = process.env.PORT || 5000
 
 app.use(express.static(path.join(__dirname, '/frontend/dist')))
 
-
-app.get("/", (req, res) => {
-    res.send("Hello From Backend!!!!!")
+app.use("*", (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'))
 })
 
 app.post("/api/contact", async (req, res) => {
@@ -81,11 +80,6 @@ app.get("/api/allmessages", async (req, res) => {
             message: error.message
         }) 
     }
-})
-
-
-app.use("*", (req, res) => {
-    res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'))
 })
 
 app.listen(port, () => {
