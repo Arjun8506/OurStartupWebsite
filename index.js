@@ -3,6 +3,7 @@ import dotenv from "dotenv"
 import mongoose from "mongoose"
 import cors from "cors"
 import Contact from "./contact.model.js"
+import path from "path"
 
 const connectToDB = async () => {
     try {
@@ -14,6 +15,8 @@ const connectToDB = async () => {
         return
     }
 }
+
+const __dirname = path.resolve()
 
 const app = express()
 dotenv.config()
@@ -75,6 +78,12 @@ app.get("/api/allmessages", async (req, res) => {
             message: error.message
         }) 
     }
+})
+
+app.use(express.static(path.join(__dirname, '/frontend/dist')))
+
+app.use("*", (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'))
 })
 
 app.listen(port, () => {
