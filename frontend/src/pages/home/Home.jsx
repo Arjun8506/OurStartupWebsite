@@ -41,7 +41,7 @@ const Home = () => {
         </p>
       </div>
 
-      <div className="w-full min-h-screen bg-[rgb(9,88,124)] text-white  clip-polygon-2 mb-3 px-4 py-4 sm:px-6">
+      <div className="w-full min-h-fit bg-[rgb(9,88,124)] text-white  clip-polygon-2 mb-3 px-4 py-4 sm:px-6">
         <div className="w-full min-h-screen px-2 py-6">
           <h1 className="text-xl sm:text-2xl text-center mb-4 font-bold lg:text-start lg:text-4xl lg:mb-10">
             Some of our creations

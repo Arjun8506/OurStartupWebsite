@@ -21,7 +21,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="w-full min-h-screen py-8 mt-20 sm:mt-24 md:mt-28">
+    <div className="w-full min-h-fit py-8 mt-20 sm:mt-24 md:mt-28">
       <h1 className="text-2xl mb-4 uppercase font-bold text-center  lg:text-start lg:px-10 lg:text-4xl">
         About Our
         StartUp
@@ -41,7 +41,7 @@ const About = () => {
         success.
       </p>
 
-      <div className="w-full h  flex flex-col items-center text-white  gap-4 px-4 my-5 py-8 bg-[rgb(14,84,124)] clip-polygon-2">
+      <div className="w-full  flex flex-col items-center text-white  gap-4 px-4 my-5 py-8 bg-[rgb(14,84,124)] clip-polygon-2">
         <h1 className="text-start text-2xl sm:text-4xl font-bold ">About us</h1>
 
         <Swiper

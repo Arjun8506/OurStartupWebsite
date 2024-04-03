@@ -47,7 +47,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full min-h-screen py-4  mt-32 sm:mt-24 md:mt-28 lg:mt-32 ">
+    <div className="w-full min-h-fit py-4  mt-32 sm:mt-24 md:mt-28 lg:mt-32 ">
       <h1 className="text-2xl text-center font-extrabold uppercase mb-4 px-4 sm:text-3xl lg:text-start lg:px-10 lg:text-4xl">
         Contact Us
       </h1>

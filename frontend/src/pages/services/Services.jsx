@@ -8,8 +8,8 @@ import { Autoplay } from "swiper/modules";
 
 const Services = () => {
   return (
-    <div className="w-full min-h-screen">
-      <div className="w-full min-h-screen py-4  mt-32 sm:mt-24 md:mt-28 lg:mt-32">
+    <div className="w-full min-h-fit">
+      <div className="w-full min-h-fit py-4  mt-32 sm:mt-24 md:mt-28 lg:mt-32">
         <h1 className="text-2xl sm:text-3xl text-center uppercase font-extrabold px-4 lg:text-start lg:px-10 lg:text-4xl">
           Our Services
         </h1>

@@ -7,7 +7,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="w-full min-h-[100vh] lg:min-h-fit  px-4  text-white bg-[rgb(0,31,84)] flex flex-col justify-between sm:px-6 md:px-8">
+    <div className="w-full min-h-fit lg:min-h-fit  px-4  text-white bg-[rgb(0,31,84)] flex flex-col justify-between sm:px-6 md:px-8">
       <h1 className="text-2xl uppercase py-8 lg:text-4xl lg:font-bold">Hyperfy Web Development</h1>
       <div className="flex flex-col gap-4 lg:flex-row lg:justify-between">
         <div className="flex flex-col gap-2 ">
