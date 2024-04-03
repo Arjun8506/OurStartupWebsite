@@ -60,6 +60,23 @@ app.post("/api/contact", async (req, res) => {
     }
 })
 
+app.get("/api/allmessages", async (req, res) => {
+    try {
+        const messages = await Contact.find().sort({ createdAt: -1 })
+        res.status(200).json({
+            success: true,
+            statusCode: 200,
+            messages: messages
+        })
+    } catch (error) {
+        res.status(error.statusCode).json({
+            success: false,
+            statusCode: error.statusCode,
+            message: error.message
+        }) 
+    }
+})
+
 app.listen(port, () => {
     connectToDB()
     console.log(`Server is running on port ${port}`);

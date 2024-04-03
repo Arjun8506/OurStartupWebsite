@@ -1,5 +1,5 @@
 import React from "react";
-import mainImage from "../assets/mainimage-removebg-preview.png";
+import mainImage from "../assets/mainimage-removebg-preview.svg";
 
 const Overlay = () => {
   return (
@@ -8,11 +8,11 @@ const Overlay = () => {
         <img
           src={mainImage}
           alt=""
-          className="absolute top-[60vh] sm:top-[70vh]  left-[50vw] w-32  translate-x-[-50%] translate-y-[-50%]"
+          className="absolute top-[60vh] sm:top-[70vh] lg:top-[80vh]  left-[50vw] w-32  translate-x-[-50%] translate-y-[-50%]"
         />
       </div>
-      <div className="w-40 h-40 bg-[rgb(0,31,84)] absolute z-40 top-[60vh] sm:top-[70vh] rounded-full  left-[50vw]   translate-x-[-50%] translate-y-[-50%]"></div>
-      <div className="w-60 h-60 bg-[rgba(51,126,255,0.65)] absolute z-30 top-[60vh] sm:top-[70vh]  rounded-full  left-[50vw]   translate-x-[-50%] translate-y-[-50%] blur-lg"></div>
+      <div className="w-40 h-40 bg-[rgb(0,31,84)] absolute z-40 top-[60vh] sm:top-[70vh] lg:top-[80vh] rounded-full  left-[50vw]   translate-x-[-50%] translate-y-[-50%]"></div>
+      <div className="w-60 h-60 bg-[rgba(51,126,255,0.65)] absolute z-30 top-[60vh] sm:top-[70vh] lg:top-[80vh]  rounded-full  left-[50vw]   translate-x-[-50%] translate-y-[-50%] blur-lg"></div>
     </div>
   );
 };

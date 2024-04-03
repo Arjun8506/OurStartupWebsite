@@ -47,17 +47,17 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full min-h-screen py-4 mt-24 sm:mt-28">
-      <h1 className="text-2xl text-center font-extrabold uppercase mb-4 px-4 sm:text-3xl">
+    <div className="w-full min-h-screen py-4  mt-32 sm:mt-24 md:mt-28 lg:mt-32 ">
+      <h1 className="text-2xl text-center font-extrabold uppercase mb-4 px-4 sm:text-3xl lg:text-start lg:px-10 lg:text-4xl">
         Contact Us
       </h1>
-      <div className="w-full px-4 sm:px-8">
+      <div className="w-full px-4 sm:px-8 lg:px-10 ">
         <img src={conatctImage} alt="" className="w-full rounded-lg" />
       </div>
-      <h1 className="text-2xl mt-4 font-extrabold px-4 sm:px-8 sm:text-3xl">Let's Talk</h1>
-      <div className="w-full min-h-fit bg-[rgb(18,130,162)] clip-polygon-2 py-4 px-4 sm:px-8 sm:py-6">
+      <h1 className="text-2xl mt-4 font-extrabold px-4 sm:px-8 sm:text-3xl lg:text-4xl lg:px-10">Let's Talk</h1>
+      <div className="w-full min-h-fit bg-[rgb(18,130,162)] clip-polygon-2 py-4 px-4 sm:px-8 sm:py-6 lg:px-10 lg:flex lg:mx-auto">
         <form
-          className=" px-4  py-4 mt-4 border-[2px] text-white  border-white rounded-lg flex flex-col items-center gap-3 sm:gap-5 sm:py-6"
+          className="lg:w-[60%] px-4  py-4 mt-4 border-[2px] text-white  border-white rounded-lg flex flex-col items-center gap-3 sm:gap-5 sm:py-6 lg:py-8"
           onSubmit={handleSubmit}
         >
           <input
