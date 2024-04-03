@@ -11,9 +11,10 @@ const IsAdmin = () => {
 
   const getAllMessages = async () => {
     try {
-      const res = await fetch("http://localhost:3000/api/allmessages");
+      const res = await fetch("https://hyperfy.onrender.com/api/allmessages");
       const data = await res.json();
       setmessages(data.messages);
+      console.log(data);
     } catch (error) {
       toast.error(error.message);
     }

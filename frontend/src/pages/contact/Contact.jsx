@@ -39,6 +39,7 @@ const Contact = () => {
       }
       setloading(false);
       toast.success(data.message)
+      console.log(data);
       navigate("/")
     } catch (error) {
       setloading(false)

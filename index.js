@@ -27,10 +27,6 @@ const port = process.env.PORT || 5000
 
 app.use(express.static(path.join(__dirname, '/frontend/dist')))
 
-app.use("*", (req, res) => {
-    res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'))
-})
-
 app.post("/api/contact", async (req, res) => {
     try {
         const { name, email, message } = req.body
@@ -81,6 +77,11 @@ app.get("/api/allmessages", async (req, res) => {
         }) 
     }
 })
+
+app.use("*", (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'))
+})
+
 
 app.listen(port, () => {
     connectToDB()
